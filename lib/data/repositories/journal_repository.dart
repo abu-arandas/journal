@@ -27,4 +27,13 @@ class JournalRepository {
   Future<List<JournalEntry>> getEntriesByDate(DateTime date) async {
     return await _databaseService.getEntriesByDate(date);
   }
+
+  Future<void> saveEntry(JournalEntry cloudEntry) async {
+    final existingEntry = await _databaseService.getEntry(cloudEntry.id!);
+    if (existingEntry != null) {
+      await _databaseService.updateEntry(cloudEntry);
+    } else {
+      await _databaseService.insertEntry(cloudEntry);
+    }
+  }
 }

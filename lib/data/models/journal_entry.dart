@@ -1,5 +1,5 @@
 class JournalEntry {
-  final int? id;
+  int? id;
   final String title;
   final String content;
   final DateTime createdAt;

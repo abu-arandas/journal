@@ -101,10 +101,17 @@ class SettingsView extends StatelessWidget {
                 },
               ),
 
-            Divider(),
-
-            // Customization Section
+            Divider(),            // Customization Section
             _buildSectionHeader(context, 'Customization'),
+
+            // Language
+            ListTile(
+              title: Text('Language'),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Get.toNamed('/language');
+              },
+            ),
 
             // Mood Options
             ListTile(
@@ -126,10 +133,28 @@ class SettingsView extends StatelessWidget {
               },
             ),
 
-            Divider(),
+            Divider(),            // Account Section
+            _buildSectionHeader(context, 'Account'),            // Cloud Sync
+            ListTile(
+              title: Text('Cloud Sync'),
+              subtitle: Text('Backup and sync your journal entries'),
+              leading: Icon(Icons.cloud_sync),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Get.toNamed('/cloud-sync');
+              },
+            ),
 
-            // Account Section
-            _buildSectionHeader(context, 'Account'),
+            // Export
+            ListTile(
+              title: Text('Export Journal'),
+              subtitle: Text('Save your entries in various formats'),
+              leading: Icon(Icons.download),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () {
+                Get.toNamed('/export');
+              },
+            ),
 
             // Sign Out
             ListTile(

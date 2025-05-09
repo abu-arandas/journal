@@ -7,4 +7,7 @@ abstract class Routes {
   static const journalDetail = '/journal-detail';
   static const journalEntry = '/journal-entry';
   static const settings = '/settings';
+  static const cloudSync = '/cloud-sync';
+  static const export = '/export';
+  static const language = '/language';
 }

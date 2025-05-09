@@ -32,12 +32,13 @@ dependencies:
   local_auth: ^2.1.8
   flutter_secure_storage: ^9.0.0
   encrypt: ^5.0.3
-  
-  # Firebase (optional - can be commented out if not using)
-  # firebase_core: ^2.25.4
-  # firebase_auth: ^4.17.4
-  # cloud_firestore: ^4.15.4
-  # firebase_storage: ^11.6.5
+    # Firebase for cloud sync
+  firebase_core: ^2.25.4
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.4
+  firebase_storage: ^11.6.5
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,11 @@
 import 'package:get/get.dart';
 import 'package:journal/modules/auth/views/login_view.dart';
+import 'package:journal/modules/cloud/views/cloud_sync_view.dart';
+import 'package:journal/modules/export/views/export_view.dart';
 import 'package:journal/modules/home/views/home_view.dart';
 import 'package:journal/modules/journal/views/journal_detail_view.dart';
 import 'package:journal/modules/journal/views/journal_entry_view.dart';
+import 'package:journal/modules/settings/views/language_view.dart';
 import 'package:journal/modules/settings/views/settings_view.dart';
 import 'package:journal/modules/splash/views/splash_view.dart';
 
@@ -18,5 +21,8 @@ class AppPages {
     GetPage(name: Routes.journalDetail, page: () => const JournalDetailView()),
     GetPage(name: Routes.journalEntry, page: () => const JournalEntryView()),
     GetPage(name: Routes.settings, page: () => const SettingsView()),
+    GetPage(name: Routes.cloudSync, page: () => CloudSyncView()),
+    GetPage(name: Routes.export, page: () => ExportView()),
+    GetPage(name: Routes.language, page: () => LanguageView()),
   ];
 }
