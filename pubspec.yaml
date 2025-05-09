@@ -1,0 +1,50 @@
+name: journal
+description: "A beautiful, secure, and fully-featured Flutter Journal App designed for users who want to track their thoughts, experiences, and moods across days, months, and years. This project is perfect as a personal diary, gratitude journal, or mental health companion."
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  
+  # State management
+  get: ^4.6.6
+  
+  # Local storage
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  shared_preferences: ^2.2.2
+    # UI components
+  flutter_markdown: ^0.6.18+3
+  intl: ^0.19.0
+  table_calendar: ^3.0.9
+  fl_chart: ^0.65.0
+  
+  # Image handling
+  image_picker: ^1.0.5
+  cached_network_image: ^3.3.1
+  path: ^1.8.3
+  
+  # Security
+  local_auth: ^2.1.8
+  flutter_secure_storage: ^9.0.0
+  encrypt: ^5.0.3
+  
+  # Firebase (optional - can be commented out if not using)
+  # firebase_core: ^2.25.4
+  # firebase_auth: ^4.17.4
+  # cloud_firestore: ^4.15.4
+  # firebase_storage: ^11.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
